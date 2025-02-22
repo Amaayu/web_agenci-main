@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS -->
+    <link href="./output.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!--title-->
+    <title>G1 Minde</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon" />
+
+    <!--scripte.js -->
+    <script src="scripte.js" async></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav
+        class="grid grid-cols-6 sm:grid-cols-12 max-w-full sm:h-[50px] h-15 m-2"
+      >
+        <left
+          class="flex col-span-3 items-center justify-end gap-2 sm:mr-0 mr-10"
+        >
+          <img
+            class="w-[30px] h-[30px]"
+            src="./images/favicon.png"
+            alt="logo"
+          />
+          <h1
+            class="sm:text-3xl text-2xl font-bold text-black font-stretch-normal"
+          >
+            G1 Minde
+          </h1>
+        </left>
+        <center
+          class="hidden sm:flex items-center justify-between sm:col-span-6 px-20"
+        >
+          <a href="#home" class="hover:text-blue-500 cursor-pointer">Home</a>
+          <a href="#services" class="hover:text-blue-500 cursor-pointer"
+            >Services</a
+          >
+          <a href="#about" class="hover:text-blue-500 cursor-pointer">About</a>
+          <a href="#contact" class="hover:text-blue-500 cursor-pointer"
+            >Contact</a
+          >
+        </center>
+        <right
+          class="flex items-center sm:justify-center justify-end sm:gap-8 gap-4 col-span-3"
+        >
+          <button
+            class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded sm:block hidden"
+          >
+            Sign Up
+          </button>
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded sm:block hidden"
+          >
+            Login
+          </button>
+
+          <div class="block sm:hidden mr-5">
+            <i class="fa-solid fa-bars text-2xl"></i>
+          </div>
+
+          <!-- Dark Mode Toggle Button -->
+          <button
+            id="dark-mode-toggle"
+            class="ml-4 p-2 rounded-full sm:block hidden bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white transition-colors duration-300"
+            title="Toggle Dark Mode"
+          >
+            <i class="fas fa-adjust"></i>
+          </button>
+        </right>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main
+      id="home"
+      class="flex flex-row items-center justify-evenly w-full h-auto flex-wrap-reverse text-center sm:mt-12 mt-0"
+    >
+      <left class="w-100 h-auto p-3">
+        <h1 class="sm:text-4xl text-3xl font-bold sm:mb-0 mb-6">
+          Grow Your Business
+        </h1>
+        <p class="text-[1] font-light mt-3">
+          We provide cutting-edge tech services to help your business thrive.
+          Lest's work together and make your drems come true.
+        </p>
+        <div class="sm:mt-4 mt-8">
+          <a
+            href="#contact"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl text-2xl shadow-2xl"
+            >Get in Touch</a
+          >
+        </div>
+      </left>
+      <right>
+        <img
+          class="w-100 h-auto p-5 sm:p-0"
+          src="https://www.pngplay.com/wp-content/uploads/5/Web-Design-Purple-PNG.png"
+          alt="icon"
+        />
+      </right>
+    </main>
+
+    <!--Services-->
+    <section
+      id="services"
+      class="sm:mt-0 mt-12 flex flex-col items-center justify-center text-center md:px-30 p-8"
+    >
+      <h2 class="text-3xl font-bold sm:mb-6 mb-10">Our Services</h2>
+      <div class="grid md:grid-cols-3 sm:gap-6 gap-11">
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+          <p>Creating responsive and modern websites tailored to your needs.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-semibold mb-2">Mobile Apps</h3>
+          <p>Developing intuitive mobile applications to keep you connected.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-semibold mb-2">Digital Marketing</h3>
+          <p>
+            Boosting your online presence with innovative marketing strategies.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section
+      id="testimonials"
+      class="container mx-auto px-4 py-8 md:px-30 p-15"
+    >
+      <h2 class="text-3xl font-bold mb-6 text-center">Testimonials</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded shadow">
+          <p class="italic mb-4">
+            "G1 Minde transformed our digital presence. Their team is
+            professional, responsive, and incredibly innovative."
+          </p>
+          <p class="font-semibold">- John Doe, CEO of Example Inc.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <p class="italic mb-4">
+            "Thanks to G1 Minde, our website is not only visually appealing but
+            also highly functional. Highly recommended!"
+          </p>
+          <p class="font-semibold">- Jane Smith, Founder of Startup XYZ.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-white py-8 md:px-50 p-8 mt-4">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-4 text-center">About G1 Minde</h2>
+        <p class="text-lg mb-4 text-center">
+          G1 Minde is a forward-thinking tech services agency dedicated to
+          providing innovative solutions for businesses of all sizes. Our team
+          of experts is passionate about technology and driven by a commitment
+          to excellence.
+        </p>
+        <p class="text-lg text-center">
+          We specialize in web development, mobile app creation, and digital
+          marketing. Our mission is to empower our clients with the tools they
+          need to succeed in a rapidly evolving digital landscape.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-10 bg-gray-100">
+      <div class="max-w-lg mx-auto bg-white p-8 rounded-lg sm:shadow-lg shadow">
+        <h2 class="text-3xl font-bold text-center mb-6 text-gray-800">
+          Contact Me
+        </h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input
+            type="hidden"
+            name="access_key"
+            value="d4acde86-92d5-484e-b21e-95c6fa3fdb3c"
+          />
+
+          <div class="mb-4">
+            <label
+              for="name"
+              class="block text-sm font-medium text-gray-700 mb-1"
+              >Name:</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Your Name"
+            />
+          </div>
+
+          <div class="mb-4">
+            <label
+              for="email"
+              class="block text-sm font-medium text-gray-700 mb-1"
+              >Email:</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="you@example.com"
+            />
+          </div>
+
+          <div class="mb-4">
+            <label
+              for="message"
+              class="block text-sm font-medium text-gray-700 mb-1"
+              >Message:</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              required
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition duration-300"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <!-- Footer -->
+    <footer class="bg-white mt-12 py-4 shadow-inner">
+      <div class="container mx-auto px-4 text-center">
+        <div class="mb-2">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            class="text-blue-600 hover:text-blue-800 mx-2"
+          >
+            <i class="fab fa-facebook fa-lg"></i>
+          </a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            class="text-blue-400 hover:text-blue-600 mx-2"
+          >
+            <i class="fab fa-twitter fa-lg"></i>
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            class="text-pink-600 hover:text-pink-800 mx-2"
+          >
+            <i class="fab fa-instagram fa-lg"></i>
+          </a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            class="text-blue-700 hover:text-blue-900 mx-2"
+          >
+            <i class="fab fa-linkedin fa-lg"></i>
+          </a>
+        </div>
+        <p class="text-sm">&copy; 2025 G1 Minde. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="https://wa.me/7088465452"
+      target="_blank"
+      class="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg"
+      title="Chat with us on WhatsApp"
+    >
+      <i class="fab fa-whatsapp fa-lg"></i>
+    </a>
+  </body>
+</html>

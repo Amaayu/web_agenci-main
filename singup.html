@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Page</title>
+    <!-- Tailwind CSS -->
+    <link href="./src/output.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./src/images/favicon.png" type="image/x-icon" />
+  </head>
+  <body class="bg-gray-100">
+    <!-- Signup Form Container -->
+    <div class="min-h-screen flex items-center justify-center px-4">
+      <div class="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md">
+        <h2 class="text-2xl font-bold text-center mb-6">Create an Account</h2>
+
+        <form action="#" method="post">
+          <!-- Name Field -->
+          <div class="mb-4">
+            <label for="name" class="block text-sm font-medium text-gray-700"
+              >Full Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              class="mt-1 block w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="John Doe"
+              required
+            />
+          </div>
+
+          <!-- Email Field -->
+          <div class="mb-4">
+            <label for="email" class="block text-sm font-medium text-gray-700"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="mt-1 block w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="example@example.com"
+              required
+            />
+          </div>
+
+          <!-- Password Field -->
+          <div class="mb-4">
+            <label
+              for="password"
+              class="block text-sm font-medium text-gray-700"
+              >Password</label
+            >
+            <input
+              type="password"
+              id="password"
+              class="mt-1 block w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="••••••••"
+              required
+            />
+          </div>
+
+          <!-- Confirm Password Field -->
+          <div class="mb-6">
+            <label
+              for="confirm-password"
+              class="block text-sm font-medium text-gray-700"
+              >Confirm Password</label
+            >
+            <input
+              type="password"
+              id="confirm-password"
+              class="mt-1 block w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="••••••••"
+              required
+            />
+          </div>
+
+          <!-- Signup Button -->
+          <button
+            type="submit"
+            class="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition duration-300"
+          >
+            Sign Up
+          </button>
+        </form>
+
+        <!-- Footer Links -->
+        <p class="mt-4 text-center text-sm text-gray-600">
+          Already have an account?
+          <a href="login.html" class="text-blue-600 hover:underline">Log in</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -6,6 +6,8 @@
     <title>Signup Page</title>
     <!-- Tailwind CSS -->
     <link href="./src/output.css" rel="stylesheet" />
+    <!--scripte.js -->
+    <script src="./src/scripte.js" async></script>
 
     <!-- Favicon -->
     <link rel="icon" href="./src/images/favicon.png" type="image/x-icon" />
@@ -16,17 +18,20 @@
       <div class="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md">
         <h2 class="text-2xl font-bold text-center mb-6">Create an Account</h2>
 
-        <form action="#" method="post">
+        <form class="form" id="aashu">
           <!-- Name Field -->
           <div class="mb-4">
-            <label for="name" class="block text-sm font-medium text-gray-700"
-              >Full Name</label
+            <label
+              for="username"
+              class="block text-sm font-medium text-gray-700"
+              >UserName</label
             >
             <input
               type="text"
-              id="name"
+              id="username"
               class="mt-1 block w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="John Doe"
+              autocomplete="username"
               required
             />
           </div>
@@ -41,6 +46,7 @@
               id="email"
               class="mt-1 block w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="example@example.com"
+              autocomplete="email"
               required
             />
           </div>
@@ -55,22 +61,6 @@
             <input
               type="password"
               id="password"
-              class="mt-1 block w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="••••••••"
-              required
-            />
-          </div>
-
-          <!-- Confirm Password Field -->
-          <div class="mb-6">
-            <label
-              for="confirm-password"
-              class="block text-sm font-medium text-gray-700"
-              >Confirm Password</label
-            >
-            <input
-              type="password"
-              id="confirm-password"
               class="mt-1 block w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="••••••••"
               required
